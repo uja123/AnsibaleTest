@@ -4,3 +4,6 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+    - Version: SQL Version
+      debug:
+        msg: Select @@Servername
