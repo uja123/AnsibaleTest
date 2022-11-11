@@ -1,0 +1,8 @@
+---
+- hosts: "{{ host_server }}"
+  gather_facts: yes
+  vars_files:
+    - vars/global.yaml
+  roles:
+    - { role: restore_db,
+        tags: [ restore_db ] } 
