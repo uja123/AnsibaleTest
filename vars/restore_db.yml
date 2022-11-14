@@ -2,7 +2,7 @@
 - hosts: "{{ host_server }}"
   gather_facts: yes
   vars_files:
-    - vars/global.yaml #AnsibaleTest/roles/restore_db/tasks/main.yml
+    - vars/global.yaml 
   roles:
     - AnsibaleTest/roles/restore_db/tasks/main.yml
    # - { role: restore_db,
