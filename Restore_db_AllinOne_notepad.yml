@@ -1,5 +1,7 @@
 ## These are Transcore General used variables
-
+---
+- hosts: "{{ host_server }}"
+  gather_facts: yes
 defaut_generation: 2
 env: test #(default environment)
 ld_app_ip:
