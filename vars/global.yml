@@ -1,5 +1,3 @@
-## These are Transcore General used variables
-
 defaut_generation: 2
 env: test #(default environment)
 ld_app_ip:
