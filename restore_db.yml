@@ -1,6 +1,0 @@
----
-- hosts: "{{ host_server }}"
-  gather_facts: yes
-  
-    - global.yaml
-  
