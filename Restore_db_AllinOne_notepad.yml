@@ -1,16 +1,12 @@
-## These are Transcore General used variables
+- hosts: "10.11.40.181"
+    gather_facts: yes
+- env: test #(default environment)
+    ld_app_ip:
+    db_user: ansible_test
+    db_password: test123!
+    db_name: CTRL
+    sql_instance_name: SQL_TEST
 
-defaut_generation: 2
-env: test #(default environment)
-ld_app_ip:
-db_user: ansible_test
-db_password: test123!
-db_name: CTRL
-sql_instance_name: SQL_TEST
-#- name: Copy DB backup  
-#  win_copy:
-#    src: db.bak
-#    dest: C:\{{db_name}}.BAK
 
 - name: Create db restoration sql file
   win_template:
