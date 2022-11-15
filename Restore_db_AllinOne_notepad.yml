@@ -7,7 +7,7 @@
     #db_name: CTRL
     #sql_instance_name: SQL_TEST
 
-  tasks:
+  #tasks:
     - name: Create db restoration sql file
       win_template:
          src: restore_db.j2
