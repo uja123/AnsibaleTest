@@ -1,5 +1,5 @@
-name: Playbook1
-hosts: db_host
-tasks:
+- name: Playbook1
+  hosts: '10.11.40.181'
+  tasks:
    - name: Execute command 'date'
      command: date
