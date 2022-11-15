@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: Excute commond 'date'
-      command: date
+      command: Select @@Version
        
