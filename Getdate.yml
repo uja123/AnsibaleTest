@@ -1,5 +1,6 @@
-- name: Playbook1
-  hosts: '10.11.40.181'
+- name: Hello World Sample
+  hosts: all
   tasks:
-   - name: Execute command 'date'
-     command: date
+    - name: Excute commond 'date'
+      command: date
+       
