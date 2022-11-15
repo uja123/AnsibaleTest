@@ -13,7 +13,7 @@
          dest: d:\restore_db.sql 
 
     - name: Create DB before restoration
-     win_mssql_database:
+      win_mssql_database:
          db_name: CTRL
          state: present
 
@@ -38,7 +38,7 @@
     #register: win_reg
 
     - name: Restart mssql service
-     win_service:
+      win_service:
         name: 'MSSQL${{sql_instance_name}}'
         force_dependent_services: yes
         state: restarted
