@@ -1,13 +1,13 @@
 ---
 #-name: Restoring Db
- hosts: "10.11.40.181"
- env: test #(default environment)
-    db_user: ansible_test
-    db_password: test123!
-    db_name: CTRL
-    sql_instance_name: SQL_TEST
+-  hosts: "10.11.40.181"
+   env: test #(default environment)
+    #db_user: ansible_test
+    #db_password: test123!
+    #db_name: CTRL
+    #sql_instance_name: SQL_TEST
 
-tasks:
+  tasks:
     - name: Create db restoration sql file
       win_template:
          src: restore_db.j2
@@ -15,7 +15,7 @@ tasks:
 
     - name: Create DB before restoration
      win_mssql_database:
-        db_name: "{{db_name}}"
+        db_name: CTRL
         state: present
 
     - name: Restore db backup
