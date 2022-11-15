@@ -1,0 +1,6 @@
+-
+	name: Playbook1
+	hosts: db_host
+	tasks:
+	   - name: Execute command 'date'
+	     command: date	
