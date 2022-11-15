@@ -2,7 +2,6 @@
 #-name: Restoring Db
  hosts: "10.11.40.181"
  env: test #(default environment)
-    ld_app_ip:
     db_user: ansible_test
     db_password: test123!
     db_name: CTRL
